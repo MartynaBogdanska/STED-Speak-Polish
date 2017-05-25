@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak Polish Today Website</title>
+
+<!--build:css css/styles.min.css-->
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--endbuild-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="https://use.fontawesome.com/db952bb8f0.js"></script>
+</head>
+<body>
+<!-- Preloader -->
+  <div id="preloader">
+		<div id="status"></div>
+	</div>
+
+<nav id="mainNavbar" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#home"><img src="images/SVGlogo.svg"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#teacher">Teacher</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><div class="btn btn-contact"><a href="#contact">Contact</a></div></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<section id="home" class="container-fluid">
+  <div class="row mist">
+    <div id="center-home">
+      <h3 class="text-center home-banner">Start today and</h3>
+      <h1 class="text-center home-banner">speak Polish</h3>
+      <h3 class="text-center home-banner">with <img src="images/STED_logo_white.svg"/> STED!</h3>
+    </div>
+  </div>
+</section>
+
+<section id="courses" class="container-fluid">
+  <div class="row text-center">
+   <h1 class="text-center">your courses</h1>
+    <div class="col-md-6 col-md-offset-3">There are several ways you may learn Polish at Sted. Speak Polish.
+I offer one-on-one lessons online with flexible hours, tailored to meet your individual needs. All levels taught – from beginner to advanced; classes in conversation skills and preparation for national exams available.</div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="mist">
+    <div class="row text-center">
+      <h2 class="text-center">How to start</h2>
+      <div class="col-md-3"></div>
+      <div class="col-md-2 text-center"><img src="images/icon1.png"/><p>Choose your preferred course</p></div>
+      <div class="col-md-2 text-center"><img src="images/icon2.png"/><p>Sign up for a course via webpage</p></div>
+      <div class="col-md-2 text-center"><img src="images/icon3.png"/><p>Or call me direclty to book a course</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="course-types" class="container-fluid">
+	<div class="row">
+      <h1 class="text-center">type of courses</h1>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <h3>casual</h3>
+          <p><img src="images/icon-clock.png"> 1 hour</p>
+          <p><img src="images/icon-dolar.png"> 30 per hour</p>
+          </div>
+        <div class="col-sm-4">
+          <h3>standard</h3>
+          <p><img src="images/icon-clock.png"> 1 hour a week x 10 weeks
+</p>
+          <p><img src="images/icon-dolar.png"> 320 per course</p>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <h3>travel to poland</h3>
+          <p><img src="images/icon-clock.png"> 12 hours</p>
+          <p><img src="images/icon-dolar.png"> 420 per course</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>intensive</h3>
+          <p><img src="images/icon-clock.png">3 hours a week x 10 weeks</p>
+          <p><img src="images/icon-dolar.png">900 per course</p>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-12 text-center">
+        <button href="#" class="btn" data-toggle="modal" data-target="#myModal">Sign Up</buuton>
+      </div>
+	</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title text-center" id="myModalLabel">Sign up for a course</h2>
+        <br>
+        <p class="text-center">This information will be helpful to tailor a course perfectly to your needs.</p>
+      </div>
+
+      <div class="modal-body">
+        <form action="mailto:magda@sted.com.au?subject=STED  - submittion form" method="post" enctype="text/plain" name="STED Sign Up">
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="text" placeholder="Name" name="Name" id="name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="email" placeholder="Email" name="Email" id="email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="tel" placeholder="Telephone number" name="Phone number" id="tel">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="text" placeholder="City" name="City" id="city">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="number" placeholder="Age" name="Age" id="age">
+            </div>
+          </div>
+          <div class="form-check">
+            <h4>Choose type of a course</h4>
+            <label class="form-check-label">
+              <input class="form-check-input squaredTwo" type="checkbox" name="Casual" value="">
+              Casual ($35/h)
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Standard" value="">
+              Standard ($320/10h)
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Intensive" value="">
+              Intensive ($900/30h)
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Travel to Poland" value="">
+              Travel to Poland ($420/13h)
+            </label>
+          </div>
+          <div class="form-check">
+            <h4>Choose your polish language level</h4>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Beginner" value="">
+              Beginner
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Intermediate"  value="">
+              Intermediate
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="Advanced" value="">
+              Advanced
+            </label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn-modal" value="Submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="break1" class="photo-break">
+  <div class="mist"></div>
+</section>
+
+<section id="teacher" class="container-fluid">
+	<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+      <h1 class="text-center">the teacher</h1>
+      <div class="col-sm-12 text-center">
+        <img src="images/avatar_magdalena_szczepaniak_sted.png">
+      <p>My name is Magda Szczepaniak and I have a great passion for teaching my native language, Polish! I hold a Master degree in Polish Literature and Grammar from the University of Wroclaw (2003) and have extensive experience teaching Polish as a foreign language. Since moving to Australia in 2011, I have taught Polish privately to dozens students from Australia and New Zealand and was also worked at the Brisbane Polish School in 2012. All my students are different and I love private teaching, where I can help students reach their potential by tailoring lessons to suit their individual needs and learning styles. I am passionate about Polish language, literature and culture. As a mother, I am also very interested in bilingualism and raising children who speak two languages. Come and join one of my courses and see how much fun and rewarding learning Polish can be!
+      </p>
+      </div>
+	</div>
+</section>
+
+<section id="break2" class="photo-break">
+  <div class="mist"></div>
+</section>
+
+<section id="testimonials" class="container-fluid">
+	<div class="row">
+	<div class="col-sm-12 text-center">
+      <h1 class="text-center">testimonials</h1>
+
+      <div class="container">
+        <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="1"></li>
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="2"></li>
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="3"></li>
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="4"></li>
+              <li data-target="#tcb-testimonial-carousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-halina-footner.png">
+                    <p>Magda has taught me the Polish language in private tuition over several years. I have found her to be professional, courteous and friendly at our lectures and meetings. I would strongly recommend Magda in any future endeavour she wishes to embark on.
+                    </p>
+                    <p class="text-right"><strong>Halina Footner</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-joellen-stewart.png">
+                    <p>I first started Polish Classes with Magda in 2012when my Polish vocabulary consisted of little more than a few greetings and the names of some delicious Polish dishes. With Magda’s guidance I was able to improve my polish language skills to the point where I travelled solo around Poland using the Polish language to communicate. Magda’s classes are always well prepared and organised and she is able to explain complex Polish language concepts and grammar in a way that is easy understand. Her enthusiasm for the Polish language and culture is contagious and her patience makes her an effective teacher for students at any language level. I can highly recommend Magda to anyone who is considering studying the Polish language.
+                    </p>
+                    <p class="text-right red"><strong>Joellen Stewart</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-patricia-bozyk.png">
+                    <p>Magda and  I would meet once a week at the State Library in Brisbane for wonderful Polish classes. She filled our sessions with a variety of creative and enjoyable activities and made learning Polish fun. The only reason we stopped having classes was because she moved to Dalby. Magda is a great teacher and I would highly recommend her!</p>
+                    <p class="text-right red"><strong>Patricia Bozyk</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-eliza-moson.png">
+                    <p>I have been Magda's student for 2 &amp; ½ years, both face-to-face and via Skype and believe she is the sole reason my Polish has improved tremendously. Unlike other classes I have attended, I find Magda's lesson plans follow a logical path making it easy for me to understand and ultimately retain the information. She has the rare ability to create conversations based on your skill level and her previous lessons, which enables you to practice and improve your spoken language skills. I have found this invaluable when attempting to converse with my in-laws. Magda has also tailored her lessons to suit my changing needs over the years, for example preparing for trips to Poland and attempting to bring up my daughter bilingually. I would recommend Magda as a Polish tutor to anyone wanting to learn or improve their Polish language skills.
+                    </p>
+                    <p class="text-right red"><strong>Eliza Moson</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-eva-kong.png">
+                    <p>I had to learn the leading role in 3 weeks for Opera Australia's new production of King Roger. I found Magda, god bless her!! We had a few sessions and after that I was able to sing this role in Polish. She has such a sensitive ear and great instinct as a language teacher. I was able to jump in straight away after 2 weeks with her. I've had so many coaches with so many other languages. She was one of the best. I highly recommend her as a language teacher.
+                    </p>
+                    <p class="text-right red"><strong>Eva Jinhee Kong</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10 text-center">
+                    <img src="images/avatar-david-alonso.png">
+                    <p>My wife is from Poland so I am very motivated to learn Polish. Before starting with Magda, I did group lessons and used self-guided books, but I never got too far. Magda’s program, specially the one-on-one classes are extremely useful. She customises her teaching to my needs, focusing on practicing speaking, which is exactly what I wanted. Magda is flexible to accommodate to my individual needs and provides a friendly atmosphere with a lot of encouragement. Polish language is challenging so getting the right support is very important, Magda provides this support extremely well.
+                    </p>
+                    <p class="text-right red"><strong>David Alonso</strong></p>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" data-target="#tcb-testimonial-carousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+              <a class="right carousel-control" data-target="#tcb-testimonial-carousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+            </div>
+          </div>
+      </div>
+    </div>
+	</div>
+</section>
+
+<section id="contact" class="container-fluid">
+  <div class="mist">
+    <div class="row">
+    	<div class="col-sm-12">
+          <h1 class="text-center">Contact me</h1>
+
+          <div class="col-sm-7 text-center social-media">
+            <h4>Share on Social Media</h4>
+            <a href="https://www.facebook.com/sted.speakpolish/"><div class="social-icon fb"></div></a>
+            <a href="https://plus.google.com/106994871871695195864"><div class="social-icon google"></div></a>
+            <a href="https://www.linkedin.com/in/magda-szczepaniak-b5622083/"><div class="social-icon linkedin"></div></a>
+          </div>
+
+          <div class="col-sm-5">
+            <div class="contact-details">
+              <p><i class="fa fa-user fa-lg"></i> Magda Szczepaniak<br><small>Polish Language Teacher</small></p>
+              <p><i class="fa fa-phone fa-lg"></i> </i> 0477 053 964</p>
+              <p><i class="fa fa-skype fa-lg"></i> magdabris</p>
+              <p><i class="fa fa-envelope fa-lg"></i> magda@sted.com.au</p>
+            </div>
+          </div>
+
+      </div>
+	  </div>
+  </div>
+</section>
+
+<footer class="container-fluid">
+   <div class="row">
+    <div class="text-center col-md-6 col-md-offset-3">
+      <p>STED &copy; 2017 &middot; <a href="http://martyna-bogdanska.com/" >Designed by MB</a></p>
+    </div>
+	</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--build:js js/main.min.js -->
+
+<script src="javascripts/bootstrap-sprockets.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/new.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

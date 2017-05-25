@@ -1,0 +1,492 @@
+@import "bootstrap";
+
+// Variables
+$sted-red:#FF0000;
+$sted-red-transparent:rgba(#ff0000, 0.7);
+$sted-blue:#000080;
+$sted-gray: #ccc;
+$mist-color: rgba(0, 0, 0, 0.5);
+
+$font-family: 'Open Sans', Arial, sans-serif;
+
+@mixin background-img($imgpath,$position:center,$repeat: no-repeat,$size: cover) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+				size: $size;
+    }
+}
+
+
+h1, h2, h3{
+	margin: 20px 0;
+}
+h1{
+	font-size: 3em;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 2em;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+h4{
+  font-size: 1.3em;
+}
+.red{
+  color:$sted-red;
+}
+
+::selection{
+	background-color: $sted-blue;
+	color:white;
+}
+html {
+	height: 100%;
+  margin: 0;
+	color:black;
+}
+body {
+	position: relative;
+	height: 100%;
+	margin: 0;
+  font-family: $font-family;
+  line-height: 1.5;
+}
+section{
+ padding-top: 55px;
+ padding-bottom: 55px;
+}
+.row{
+	margin: 0;
+}
+.mist{
+  background-color: $mist-color;
+}
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/** Navigation **/
+#mainNavbar{
+	position:fixed;
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+	background-color: white;
+  @include transition(padding .9s)
+
+}
+.navbar {
+    @include border-top-radius(0);
+		@include border-bottom-radius(0);
+}
+.navbar-brand img{
+	max-height: 28px;
+  margin-top: -3px;
+}
+#mainNavbar.navbar-shrink{
+	background-color: rgba(255, 255, 255, 1);
+}
+nav{
+	padding-top: 5px;
+	.btn{
+    margin-top: 9px;
+    @include border-top-radius(0);
+		@include border-bottom-radius(0);
+	}
+	.btn-contact {
+		background-color: $sted-red;
+			a {
+				color: white;
+				text-decoration: none;
+        &:hover {
+          color: white !important;
+        }
+			}
+      &:hover {
+        background-color: $sted-red-transparent;
+        @include transition(.3s)
+      }
+	}
+}
+#mainNavbar.navbar-brand{
+	padding:.5em;
+}
+#mainNavbar{
+  .navbar-right {
+    li.active a{
+      color: $sted-red;
+      font-weight: 600;
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+        color: $sted-red;
+      }
+    }
+    li a:hover {
+      color: $sted-red;
+    }
+  }
+}
+
+/** Home **/
+#home{
+	@include background-img('../images/background-1.jpg');
+  height: 100%;
+	padding:0;
+	.mist{
+		background-color: $mist-color;
+	}
+}
+#home .row{
+	position: relative;
+  height: 100%;
+}
+#center-home{
+	color: white;
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+	h1.home-banner{
+		font-size: 90px;
+    font-weight: 600;
+	}
+	h3.home-banner{
+		font-size: 30px;
+    text-transform:none;
+    font-weight: 100;
+	}
+	img{
+		height:30px;
+	}
+}
+#start {
+		@include background-img('../images/background-2.jpg');
+		height: 633px;
+		padding:0;
+    background-attachment: fixed;
+    .mist{
+      height: 100%;
+
+  		.row{
+  		background-color: $sted-red-transparent;
+  		color: white;
+  		padding: 20px 0 30px 0;
+
+  			img{
+  				height: 100px;
+  				margin:20px 0;
+  			}
+  		}
+    }
+}
+#course-types{
+    h3{
+      border-bottom: solid 3px $sted-red;
+      width: 90%
+    }
+    .row:last-child{
+      margin-top: 20px;
+    }
+    img{
+      height: 20px;
+      margin-right: 10px;
+    }
+    button.btn{
+      border: 1px solid;
+      @include border-top-radius(0);
+  		@include border-bottom-radius(0);
+      background-color: transparent;
+      font-size: 1.3em;
+      padding: 10px 50px;
+      margin-top:20px;
+      @include transition(padding .3s)
+      &:hover{
+        background-color: $sted-red;
+        color:white;
+        @include transition(.3s)
+      }
+    }
+}
+.photo-break {
+		height: 300px;
+		padding:0;
+    background-attachment: fixed;
+    .mist{
+      height: 100%;
+    }
+}
+#break1{
+  @include background-img('../images/background-3.jpg', 0 0);
+}
+#break2{
+  @include background-img('../images/background-4.jpg');
+}
+
+#teacher{
+    img {
+      height: 100px;
+      margin: 20px;
+    }
+}
+
+#testimonials {
+  img{
+    height: 100px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  p {
+    padding: 0 15px;
+  }
+  .carousel-inner{
+    .item{
+      padding: 0 20px;
+      .row{
+        min-height: 350px
+      }
+    }
+  }
+    .carousel-control{
+      background: none;
+      color: $sted-red;
+      text-shadow: none;
+      margin: 0 -10px;
+    }
+    ol.carousel-indicators {
+      margin-bottom: -20px;
+      bottom: 0 ;
+        li {
+          border-color: $sted-gray;
+
+        }
+        .active{
+          border-color: $sted-red;
+        }
+    }
+
+}
+
+#contact {
+  @include background-img('../images/background-footer.jpg');
+  color: white;
+  padding: 0 !important;
+  background-attachment: fixed;
+  .mist{
+    padding: 55px 0;
+  }
+  h1{
+    margin-bottom: 50px;
+  }
+  .social-media{
+    .social-icon{
+      margin: 20px 10px;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+    }
+    .fb{
+      @include background-img('../images/icon-fb.png');
+      &:hover{
+        @include background-img('../images/icon-fb-dark.png');
+        cursor: pointer;
+      }
+    }
+    .google{
+      @include background-img('../images/icon-google.png');
+      &:hover{
+        @include background-img('../images/icon-google-dark.png');
+        cursor: pointer;
+      }
+    }
+    .linkedin{
+      @include background-img('../images/icon-linkedin.png');
+      &:hover{
+        @include background-img('../images/icon-linkedin-dark.png');
+        cursor: pointer;
+      }
+    }
+  }
+  .contact-details {
+    text-align: left;
+    font-size: 1.2em;
+    p {
+      margin-bottom: 20px;
+
+      i.fa {
+        height: 20px;
+        margin-right: 10px;
+      }
+      small {
+        margin-left: 31px;
+        font-size: 78%;
+      }
+      @media (max-width: $screen-xs-max) {
+        text-align: center;
+        margin-top: 40px;
+        small {
+          margin-left: 26px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $sted-red;
+  color:white;
+
+  padding-top: 13px;
+  a {
+    color:white;
+    cursor: pointer;
+    &:hover,
+    &:visited{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+// Modal
+.modal-content {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+  .modal-header{
+    border-bottom: none;
+    h2 {
+      color: $sted-red;
+      padding: 40px 0 0 0;
+    }
+  }
+  .modal-body {
+    form{
+    display: grid;
+    padding: 30px 20%;
+      h4{
+        padding: 15px 0;
+      }
+      .form-group{
+        display: inline-block;
+        margin-bottom: 20px;
+        input {
+          border-style: none;
+          border-bottom: 2px solid lightgray;
+          @include box-shadow(none);
+          @include border-bottom-radius(0);
+        }
+      }
+      .form-check {
+        display: grid !important;
+        label.form-check-label {
+          font-weight: normal;
+          padding: 5px 0;
+          input[type="checkbox"] {
+            @include border-bottom-radius(0);
+            @include border-top-radius(0);
+            margin-right: 10px;
+            font-weight: normal;
+            border-color: $sted-red;
+          }
+
+        }
+      }
+      .modal-footer{
+        border-top: none;
+        margin-top: 10px;
+        margin-right: -100px;
+        button.btn-modal{
+          background-color: white;
+          border: none;
+          color: $sted-red;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+/** Mobile header **/
+@media (max-width: $screen-xs-max) {
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      &:hover, &:focus{
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: $sted-red;
+      }
+    }
+    .navbar-default .navbar-collapse {
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+        li {
+          .btn-contact {
+            width: 100%;
+            background-color: transparent;
+            margin: 0 0 0 2px;
+            text-align: left;
+            color: white;
+            a {
+              color: #777;
+              &:hover {
+                color: $sted-red !important;
+              }
+            }
+          }
+        }
+    }
+}
+
+/** Media Queries **/
+
+@media (max-width: $screen-xs-max) {
+  h1 {
+    font-size: 2.5em;
+  }
+  #home{
+    h1.home-banner{
+      font-size: 80px;
+    }
+    h3.home-banner{
+      font-size: 20px;
+    }
+    img{
+      height:20px;
+    }
+  }
+  .modal-content .modal-body form {
+    padding: 30px 10px 10px 10px;
+  }
+  .modal-footer {
+    margin-right: 0 !important;
+  }
+}
