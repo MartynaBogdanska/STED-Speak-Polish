@@ -6,6 +6,7 @@ app/css/*
 
 app/javascripts/bootstrap/*
 app/stylesheets/bootstrap/*
+app/fonts/bootstrap/*
 _bootstrap.*
 bootstrap.*
 bootstrap-*
