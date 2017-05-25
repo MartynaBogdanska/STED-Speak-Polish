@@ -14,9 +14,9 @@ To build the website following components are needed:
 
 then in Terminal type:
 
-### `gulp`
+### `gulp build`
 
-STED website should appear immediately.
+STED website will be ready to use under 'dist' folder.
 
 
 ## Author
