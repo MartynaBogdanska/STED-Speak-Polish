@@ -12,11 +12,11 @@ To build the website following components are needed:
 * bootstrap - sass framework
 * node modules to run build scripts
 
-then in Terminal type:
+Type in Terminal following command:
 
 ### `gulp build`
 
-STED website will be ready to use under 'dist' folder.
+STED website will be built and all the files you will find under 'dist' folder.
 
 
 ## Author
