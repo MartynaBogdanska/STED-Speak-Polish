@@ -9,7 +9,7 @@ app/stylesheets/bootstrap/*
 bootstrap.*
 bootstrap-.*
 bootstrap.min*
-task/*
+tasks/*
 
 composer.json
 CONTRIBUTING.md
