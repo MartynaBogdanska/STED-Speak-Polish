@@ -1,4 +1,4 @@
-*.DS_Store
+_DS_Store
 
 dist/*
 node_modules/*
@@ -6,8 +6,9 @@ app/css/*
 
 app/javascripts/bootstrap/*
 app/stylesheets/bootstrap/*
+_bootstrap.*
 bootstrap.*
-bootstrap-.*
+bootstrap-*
 bootstrap.min*
 tasks/*
 
