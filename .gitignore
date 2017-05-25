@@ -9,6 +9,7 @@ app/stylesheets/bootstrap/*
 _bootstrap.*
 bootstrap.*
 bootstrap-*
+_bootstrap-*
 bootstrap.min*
 tasks/*
 
