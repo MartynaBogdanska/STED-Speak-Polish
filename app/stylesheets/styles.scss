@@ -46,10 +46,9 @@ a {
   }
 }
 p {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 .red{
   color:$sted-red;
@@ -210,7 +209,7 @@ nav{
 		@include background-img('../images/background-2.jpg');
 		height: 633px;
 		padding:0;
-    background-attachment: fixed;
+    background-attachment: scroll;
     .mist{
       height: 100%;
 
@@ -257,7 +256,7 @@ nav{
 .photo-break {
 		height: 300px;
 		padding:0;
-    background-attachment: fixed;
+    background-attachment: scroll;
     .mist{
       height: 100%;
     }
@@ -325,7 +324,7 @@ nav{
   @include background-img('../images/background-footer.jpg');
   color: white;
   padding: 0 !important;
-  background-attachment: fixed;
+  background-attachment: scroll;
   .mist{
     padding: 55px 0;
   }
