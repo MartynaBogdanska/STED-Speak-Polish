@@ -1,0 +1,55 @@
+{
+  "name": "STED Speak Polish",
+  "version": "1.0.0",
+  "description": "STED Speak Polish. Start your Polish Language course on Skype from any place in the world.",
+  "main": "assets/javascripts/bootstrap.js",
+  "style": "assets/stylesheets/_bootstrap.scss",
+  "sass": "assets/stylesheets/_bootstrap.scss",
+  "files": [
+    "assets",
+    "eyeglass-exports.js",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MartynaBogdanska/STED-Speak-Polish"
+  },
+  "keywords": [
+    "polish language in australia",
+    "polish lessons in australia",
+    "polish language course",
+    "polish lessons on skype",
+    "polish lessons online",
+    "polish",
+    "language course",
+    "skype",
+    "online"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twbs/bootstrap-sass/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "ejs": "~2.4.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "mincer": "~1.4.0",
+    "node-sass": "^3.8.0",
+    "run-sequence": "^1.2.2"
+  },
+  "eyeglass": {
+    "exports": "eyeglass-exports.js",
+    "needs": "^0.7.1"
+  },
+  "homepage": "http://www.sted.com.au/",
+  "author": "Martyna Bogdanska",
+  "owner": "Magdalena Szczepaniak"
+}
