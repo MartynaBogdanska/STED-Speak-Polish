@@ -262,10 +262,10 @@ nav{
     }
 }
 #break1{
-  @include background-img('../images/background-3.jpg', 0 0);
+  @include background-img('../images/background-3.jpg', 20% 20%);
 }
 #break2{
-  @include background-img('../images/background-4.jpg');
+  @include background-img('../images/background-4.jpg', 20% 30%);
 }
 
 #teacher{
